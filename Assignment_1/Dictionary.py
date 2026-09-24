@@ -1,4 +1,3 @@
-# Database of iPhone models (11 to 18 series & Duo) with Bangladesh market prices (BDT)
 IPHONES = {
     "11": {
         "year": 2019,
