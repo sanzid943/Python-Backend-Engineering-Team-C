@@ -44,7 +44,45 @@ print("Hobby: ", hobby.lower())
 
 # capitalize
 
-print("\nUPPERCASE-")
+print("\nCAPITALIZE-")
 print("Name: ", name.capitalize())
 print("Address: ", address.capitalize())
 print("Hobby: ", hobby.capitalize())
+
+# title
+
+print("\nTITLE-")
+print("Name: ", name.title())
+print("Address: ", address.title())
+
+# replace
+
+print("\nREPLACE-")
+
+new_address= address.replace("Rajshahi")
+print("New address: ", new_address)
+
+# find
+
+print("\nFIND-")
+
+position= email.find("@")
+print("@ position: ", position)
+
+# count
+
+print("\nCOUNT-")
+print("Number of 'a' in name: ", name.lower().count("a"))
+
+# starts with
+
+print("\STARTS WITH-")
+
+if name.lower().startswith("m"):
+    print("Your name starts with M")
+
+else:
+    print("Your name doesn't start with M")
+
+
+
