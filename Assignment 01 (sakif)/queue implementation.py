@@ -39,7 +39,7 @@ print(queue)           # deque([1, 2, 3])
 print(dequeue(queue))  # 1
 print(front(queue))     # 2
 print(size(queue))     # 2
-print(is_empty(queue)) # False
+print(is_empty(queue)) # queue is not empty
 
 # Emptying the queue and testing error handling
 try:

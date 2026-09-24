@@ -38,7 +38,7 @@ print(stack)          # [1, 2, 3]
 print(pop(stack))     # 3
 print(top(stack))    # 2
 print(size(stack))    # 2
-print(is_empty(stack)) # False
+print(is_empty(stack)) # stack is not empty
 
 # Emptying the stack and testing error handling
 try:
