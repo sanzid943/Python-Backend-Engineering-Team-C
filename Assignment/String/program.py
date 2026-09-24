@@ -134,3 +134,41 @@ print("\SLICING-")
 if len(name)>= 3:
     print("first 3 character: ", name[:3])
     print("last 3 character: ", name[-3:])
+
+
+# reverse
+
+print("\nREVERSE-")
+print("Reverse name: ", name[-1])
+
+# is alpha
+
+print("\nCHARACTER CHECK-")
+
+if name.replace(" ","").isalpha():
+    print("name contains only letters")
+
+else:
+    print("name contains numbers or special characters")
+
+
+# is digit
+
+age= input("\nEnter your age: ")
+
+if age.isdigit():
+    print("age contains only numbers")
+
+else:
+    print("invalid age")
+
+
+# isalnum
+
+student_id= input("\nEnter your student ID: ")
+
+if student_id.isalnum():
+    print("student ID is valid")
+
+else:
+    print("student ID contains special characters")
