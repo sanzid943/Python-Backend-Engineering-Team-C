@@ -69,10 +69,12 @@ print("\nFIND-")
 position= email.find("@")
 print("@ position: ", position)
 
+
 # count
 
 print("\nCOUNT-")
 print("Number of 'a' in name: ", name.lower().count("a"))
+
 
 # starts with
 
@@ -85,4 +87,50 @@ else:
     print("Your name doesn't start with M")
 
 
+# ends with
 
+print("\ENDS WITH-")
+
+if email.lower().endswith(".com"):
+    print("This is a .com email")
+
+else:
+    print("This is not a .com email")
+
+
+# in operator
+
+print("\SEARCH-")
+
+if "python" in hobby.lower():
+    print("you like python")
+
+else:
+    print("python is not mentioned in your hobby")
+
+
+# split
+
+print("\SPLIT-")
+
+name_parts= name.split()
+print("name parts: ", name_parts)
+print("number of name parts: ", len(name_parts))
+
+
+# string indexing
+
+print("\INDEXING-")
+
+if len(name)> 0:
+    print("first character: ", name[0])
+    print("last character: ", name[-1])
+
+
+# slicing
+
+print("\SLICING-")
+
+if len(name)>= 3:
+    print("first 3 character: ", name[:3])
+    print("last 3 character: ", name[-3:])
