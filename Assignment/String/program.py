@@ -59,7 +59,7 @@ print("Address: ", address.title())
 
 print("\nREPLACE-")
 
-new_address= address.replace("Rajshahi")
+new_address= address.replace("Dhaka", "Rajshahi")
 print("New address: ", new_address)
 
 # find
@@ -78,7 +78,7 @@ print("Number of 'a' in name: ", name.lower().count("a"))
 
 # starts with
 
-print("\STARTS WITH-")
+print("\nSTARTS WITH-")
 
 if name.lower().startswith("m"):
     print("Your name starts with M")
@@ -89,7 +89,7 @@ else:
 
 # ends with
 
-print("\ENDS WITH-")
+print("\nENDS WITH-")
 
 if email.lower().endswith(".com"):
     print("This is a .com email")
@@ -100,7 +100,7 @@ else:
 
 # in operator
 
-print("\SEARCH-")
+print("\nSEARCH-")
 
 if "python" in hobby.lower():
     print("you like python")
@@ -111,7 +111,7 @@ else:
 
 # split
 
-print("\SPLIT-")
+print("\nSPLIT-")
 
 name_parts= name.split()
 print("name parts: ", name_parts)
@@ -120,7 +120,7 @@ print("number of name parts: ", len(name_parts))
 
 # string indexing
 
-print("\INDEXING-")
+print("\nINDEXING-")
 
 if len(name)> 0:
     print("first character: ", name[0])
@@ -129,7 +129,7 @@ if len(name)> 0:
 
 # slicing
 
-print("\SLICING-")
+print("\nSLICING-")
 
 if len(name)>= 3:
     print("first 3 character: ", name[:3])
@@ -139,7 +139,7 @@ if len(name)>= 3:
 # reverse
 
 print("\nREVERSE-")
-print("Reverse name: ", name[-1])
+print("Reverse name: ", name[::-1])
 
 # is alpha
 
