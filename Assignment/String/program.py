@@ -1,6 +1,8 @@
 #student information
 
 name= input("enter your full name: ")
+student_id= input("Enter your student ID: ")
+age= input("Enter your age: ")
 email= input("enter your email: ")
 address= input("enter your address: ")
 hobby= input("enter your hobby: ")
@@ -154,7 +156,7 @@ else:
 
 # is digit
 
-age= input("\nEnter your age: ")
+print("\nAGE CHECK-")
 
 if age.isdigit():
     print("age contains only numbers")
@@ -165,7 +167,7 @@ else:
 
 # isalnum
 
-student_id= input("\nEnter your student ID: ")
+print("\nID CHECK-")
 
 if student_id.isalnum():
     print("student ID is valid")
