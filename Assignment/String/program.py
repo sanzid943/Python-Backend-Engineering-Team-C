@@ -1,3 +1,4 @@
+
 #student information
 
 name= input("enter your full name: ")
