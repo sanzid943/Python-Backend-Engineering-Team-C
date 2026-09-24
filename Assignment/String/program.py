@@ -175,3 +175,6 @@ if student_id.isalnum():
 
 else:
     print("student ID contains special characters")
+
+
+# program finished
