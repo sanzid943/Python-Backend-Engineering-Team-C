@@ -42,20 +42,20 @@ print(is_empty(stack)) # False
 
 # Emptying the stack and testing error handling
 try:
-    pop(stack)  # works fine, stack is not empty
+    print(pop(stack))  # works fine, stack is not empty
 except IndexError as e:
     print("Error:", e)
 try:
-    pop(stack)  # works fine, stack is not empty
+    print(pop(stack))  # works fine, stack is not empty
 except IndexError as e:
     print("Error:", e)
 
 try:
-    pop(stack)  # stack is now empty
+    print(pop(stack))  # stack is now empty
 except IndexError as e:
     print("Error:", e) # catches & shows error
 
 try:
-    top(stack)  # stack is empty
+    print(top(stack))  # stack is empty
 except IndexError as e:
     print("Error:", e) # catches & shows error
