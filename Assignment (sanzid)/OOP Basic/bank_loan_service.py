@@ -19,10 +19,10 @@ class BankingCustomer:
     def check_eligibility(self):
 
         if self.age >= 18:
-            print("customer is eligible for banking service")
+            print("\nCustomer is eligible for banking service")
 
         else:
-            print("customer is not eligible")
+            print("\nCustomer is not eligible")
 
 
 class LoanService(BankingCustomer):
@@ -54,7 +54,7 @@ class LoanService(BankingCustomer):
         
         total = self.loan_amount + self.calculate_interest()
         monthly_payment = total / self.loan_months
-        print("Monthly payment: ", monthly_payment)
+        print("\nMonthly payment: ", f"{monthly_payment:.2f}")
 
     
     def make_loan_payment(self, amount):
@@ -71,23 +71,23 @@ class LoanService(BankingCustomer):
     def check_loan_status(self):
 
         if self.loan_amount == 0:
-            print("Loan status: Fully paid")
+            print("\nLoan status: Fully paid")
 
         else:
-            print("Loan status: Active")
+            print("\nLoan status: Active")
             print("Remaining loan: ", self.loan_amount)
 
 
     def calculate_transaction_fee(self, amount):
 
         fee = amount * 1 /100
-        print("Transaction amount: ", amount)
+        print("\nTransaction amount: ", amount)
         print("Transaction fee: ", fee)
         print("Total amount: ", amount + fee)
 
 
 
-customer = LoanService("Rahim", "101", 26, "Loan account", 80000, 10, 12)
+customer = LoanService("Rahim", "101", 26, "Loan account", 80000, 9, 12)
 
 customer.display_customer()
 customer.check_eligibility()
