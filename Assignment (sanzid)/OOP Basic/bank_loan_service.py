@@ -49,6 +49,14 @@ class LoanService(BankingCustomer):
         print("Interest: ", interest)
         print("Total loan: ", total)
 
+
+    def calculate_monthly_payment(self):
+        
+        total = self.loan_amount + self.calculate_interest()
+        monthly_payment = total / self.loan_months
+        print("Monthly payment: ", monthly_payment)
+        
+    
     def make_loan_payment(self, amount):
 
         if(amount <= self.loan_amount):
@@ -58,4 +66,21 @@ class LoanService(BankingCustomer):
 
         else:
             print("\nPayment is greater than remaining loan")
-            
+
+
+    def check_loan_status(self):
+
+        if self.loan_amount == 0:
+            print("Loan status: Fully paid")
+
+        else:
+            print("Loan status: Active")
+            print("Remaining loan: ", self.loan_amount)
+
+
+    def calculate_transaction_fee(self, amount)
+
+        fee = amount * 1 /100
+        print("Transaction amount: ", amount)
+        print("Transaction fee: ", fee)
+        print("Total amount: ", amount + fee)
