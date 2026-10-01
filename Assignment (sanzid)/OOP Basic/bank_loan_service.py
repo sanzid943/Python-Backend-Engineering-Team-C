@@ -55,7 +55,7 @@ class LoanService(BankingCustomer):
         total = self.loan_amount + self.calculate_interest()
         monthly_payment = total / self.loan_months
         print("Monthly payment: ", monthly_payment)
-        
+
     
     def make_loan_payment(self, amount):
 
@@ -84,3 +84,6 @@ class LoanService(BankingCustomer):
         print("Transaction amount: ", amount)
         print("Transaction fee: ", fee)
         print("Total amount: ", amount + fee)
+
+customer = LoanService("Rahim", "101", 26, "Loan account", 80000, 10, 12)
+
