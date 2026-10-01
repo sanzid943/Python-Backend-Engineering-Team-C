@@ -78,12 +78,26 @@ class LoanService(BankingCustomer):
             print("Remaining loan: ", self.loan_amount)
 
 
-    def calculate_transaction_fee(self, amount)
+    def calculate_transaction_fee(self, amount):
 
         fee = amount * 1 /100
         print("Transaction amount: ", amount)
         print("Transaction fee: ", fee)
         print("Total amount: ", amount + fee)
 
+
+
 customer = LoanService("Rahim", "101", 26, "Loan account", 80000, 10, 12)
+
+customer.display_customer()
+customer.check_eligibility()
+
+customer.calculate_total_loan()
+customer.calculate_monthly_payment()
+
+customer.check_loan_status()
+customer.make_loan_payment(10000)
+
+customer.check_loan_status()
+customer.calculate_transaction_fee(4000)
 
