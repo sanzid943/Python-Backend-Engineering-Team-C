@@ -1,3 +1,4 @@
+#Bank Loan using OOP basic concepts
 class BankingCustomer:
 
     def __init__(self, full_name, account_id, age, acc_type="Savings"):
